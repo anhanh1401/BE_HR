@@ -1,4 +1,4 @@
-package com.cnpm.hr.config;
+package com.cnpm.hr.security;
 
 import com.cnpm.hr.entity.EmployeeRole;
 import com.cnpm.hr.entity.Employees;
@@ -6,7 +6,7 @@ import com.cnpm.hr.entity.Roles;
 import com.cnpm.hr.repository.EmployeeRoleRepository;
 import com.cnpm.hr.repository.RoleRepository;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
-
+@Data
 public class UserDetailsImpl implements UserDetails {
 
     private static EmployeeRoleRepository emroleRepo;

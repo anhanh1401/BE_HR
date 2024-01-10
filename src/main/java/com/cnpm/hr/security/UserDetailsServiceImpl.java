@@ -1,4 +1,4 @@
-package com.cnpm.hr.config;
+package com.cnpm.hr.security;
 
 import com.cnpm.hr.entity.Employees;
 import com.cnpm.hr.entity.Roles;
@@ -13,7 +13,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service

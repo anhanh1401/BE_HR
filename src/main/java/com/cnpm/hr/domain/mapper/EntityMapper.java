@@ -1,4 +1,4 @@
-package com.cnpm.hr.domain;
+package com.cnpm.hr.domain.mapper;
 
 import java.util.List;
 

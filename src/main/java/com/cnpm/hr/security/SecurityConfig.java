@@ -1,4 +1,4 @@
-package com.cnpm.hr.config;
+package com.cnpm.hr.security;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
@@ -32,7 +32,7 @@ public class SecurityConfig {
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeHttpRequests(Authorize->
-                        Authorize.requestMatchers("/login","/logout").permitAll()
+                        Authorize.requestMatchers("/login").permitAll()
                                 .anyRequest().authenticated())
                 .addFilterBefore(new JwtAuthenticationFilter(), BasicAuthenticationFilter.class)
                 .csrf().disable()

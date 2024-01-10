@@ -1,4 +1,4 @@
-package com.cnpm.hr.config;
+package com.cnpm.hr.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

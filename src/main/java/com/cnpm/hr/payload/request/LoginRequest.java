@@ -1,2 +1,10 @@
-package com.cnpm.hr.payload;public class LoginRequest {
+package com.cnpm.hr.payload.request;
+
+import lombok.Data;
+
+@Data
+public class LoginRequest {
+    private String email;
+
+    private String password;
 }
